@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>WELCOME TO GLA CLUB STORE</title>
+     <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <div class="logo">
+       <img src="2.png">
+    </div>
+    
+<div class= "container">
+       <span class="text1">WELCOME TO</span>
+       <span class ="text2">GLAU CLUB STORE</span>     
+       </div>
+<div class="login-page">
+      <div class= "form">
+             <img src="avatar1.png"  class="avatar">
+             <form class="register-form" action="insert.php" method="post" onsubmit=" return validation()">
+              <input type="text" name="yourname" id="yourname"   placeholder="Your Name" required/>
+                  <label id="yn" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Invalid Name</label>
+
+              <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                  <label id="mail" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Invalid Email</label>
+
+              <input type="number" name="number" id="number" autocomplete="off"  placeholder="Mobile Number" required/>
+                  <label id="num" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Invalid Number</label>
+                  
+              <input type="password" name="password"   id="password"      placeholder="Password" required/>
+                  <label id="pass" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Password too short</label>
+
+              <input type="password" name="confirmpassword"  id="confirmpassword" placeholder="Confirm Password" required/>
+             
+                  <label id="cnf" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Password does not match</label>
+
+                  
+              <button >create account</button>
+              <p class="message3">Already registered  ?  <a href="#"> Login </a></p>
+     </form>
+     
+     
+     <form class ="login-form" action="abd.php" method="post" onsubmit="return validate()">
+              <input type="text" name ="username" id ="username" placeholder="username" required/>
+                    <label id="user" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Incorrect Username</label>
+              
+              <input type="password" name="password" id="password2" placeholder="password" required/>
+                    <label id="pass2" style="color: red;visibility: hidden;font-family:sans-serif;font-style:normal;font-size: 14px;text-align: left;">Incorrect Password </label>
+
+         <button name="submit" id="submit"> login </button>
+              <p class ="message">Not Registered ?  <a href="#">  Register  </a> </p>
+              <p class="message2">Forgot Password ? <a href="#"> Forgot </a>   </p>
+         </form>
+         
+        <form class = "forget-form" method="post" action="forget.php">
+         
+          <input type="email" name="email" id="email1" placeholder="Type your Email ! " required/>
+          <button id="forget" name="forget" value="submit">Submit</button>
+              
+        </form>
+</div>
+    </div>
+   <script src='https://code.jquery.com/jquery-3.3.1.min.js'>
+    </script>
+    <script>
+       $('.message a').click(function(e){
+       $('.register-form').animate({height:"toggle",opacity:"toggle"}, "slow");                     
+       $('.login-form').css('display','none');                    
+       $('.forget-form').css('display','none');
+           e.preventDefault();
+       });
+        </script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'>
+    </script>
+    <script>
+       $('.message3 a').click(function(p){
+       $('.login-form').animate({height:"toggle",opacity:"toggle"}, "slow");                     
+    $('.register-form').css('display','none');                    
+    $('.forget-form').css('display','none');
+           p.preventDefault();
+       });
+        
+        
+        
+        
+        
+        
+        
+    </script>
+         <script src='https://code.jquery.com/jquery-3.3.1.min.js'>
+
+    </script>
+    <script>
+       $('.message2 a').click(function(){
+       $('.forget-form').animate({height:"toggle",opacity:"toggle"}, "slow");                     
+                         });
+    </script>
+   
+    
+    
+    
+    
+    <script type="text/javascript">
+        
+        function validation(){
+           
+            var yourname=document.getElementById("yourname").value;
+            var email=document.getElementById("email").value;
+            var number=document.getElementById("number").value;
+            var password=document.getElementById("password").value;
+            var confirmpassword=document.getElementById("confirmpassword").value;
+            
+           for(i=0;i<yourname.length;i++)
+               {
+                   ch=yourname.charAt(i);
+                   if(!(ch>='a'&&ch<='z')&&!(ch>='A'&&ch<='Z')&&!(ch='')){
+                             document.getElementById("yn").style.visibility="visible";
+                       return false;
+                   }
+               }
+            
+        if(password.length<5){
+            
+            document.getElementById("pass").style.visibility="visible";
+              
+            return false;
+            }
+        if(password!=confirmpassword){
+            document.getElementById("cnf").style.visibility="visible";
+            return false;
+        }
+        if(isNaN(number)||(number.length!=10)){
+            document.getElementById('num').style.visibility="visible";
+            return false;
+        }   
+        if(email.indexOf('@')<=0){
+            document.getElementById('mail').style.visibility="visible";
+            return false;
+        }    
+        if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.')){
+                document.getElementById('mail').style.visibility="visible";
+            return false;
+            }
+            
+            
+        }
+    
+    </script>                                             >
+    
+    <script type="text/javascript">
+     function validate()
+        {
+         
+         var username = document.getElementById("username").value;
+         var pass = document.getElementById("password2").value;    
+         ch=username.charAt(0);
+            
+            if(ch=='_'){
+                document.getElementById("user").style.visibility="visible";
+                return false;
+            }
+         
+        if(pass.length<5){
+            
+            document.getElementById("pass2").style.visibility="visible";
+              
+            return false;
+            }
+              
+         
+         
+     }
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+</body>
+    
+</html>

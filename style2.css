@@ -1,0 +1,156 @@
+
+body{
+   background-image: url(j.jpg);
+   background-size:cover;
+    height: 100vh;
+   background-position:center; 
+    margin: 20px;
+    width: 100%;
+    
+}
+.slider{
+    margin: 20 24%;
+    overflow: hidden;
+    height: 400px;
+    
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+     
+
+}
+.slider figure img{
+    width: 80%;
+    float: left;
+    
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 30px;
+    left: 0px;
+    animation: 20s ayush infinite;
+}
+@keyframes ayush{
+    0%{
+        left: 0%;
+        
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%
+    {
+         left: -100%;
+        
+    }
+    24%{
+        left: -200%;
+        
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+        
+    }
+    46%{
+        left: -300%;
+    }
+    48%{
+        left: -300%;
+    }
+    58%{
+        left: -400%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    72%{
+        left: -200%;
+        
+    }
+
+    82%{
+        left: -200%;
+        
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+     96%{
+        left: -100%;
+        
+    }
+   
+    100
+    5{
+        left: 0%;
+    }
+}
+.menu{
+    width: 100%;
+    left: 0px;
+    background: #142b47;
+    overflow: auto;        
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 60px;
+}
+.menu li{
+    float: left;
+}
+.menu ul li a{
+    background: #142b47;
+    text-decoration: none;
+    width: 130px;
+    display:block;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 0.6px;
+}
+.menu li a:hover{
+    color:skyblue;
+    opacity: 0.5;
+    font-size: 19px;
+}
+.search-form{
+    margin-top: 15px;
+    float:right;
+    margin-right: 100px;
+    }
+input[type=text]{
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+button{
+    float: right;
+        background:orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+    
+}

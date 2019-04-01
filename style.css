@@ -1,0 +1,135 @@
+body
+{ 
+       
+   background-image: url(e.jpg);
+   height: 100vh;
+   background-size:cover;
+   background-position:center; 
+   
+
+}
+.logo img{
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-top: 2%;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    }
+.container span{
+    text-transform: uppercase;
+    display: block;
+    
+}
+.text1{
+    color:black;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    animation: text 2s 1;
+    }
+.text2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color:black;
+}
+
+    
+.login-page{
+    
+    width: 360px;
+    height: 420px;
+    padding: 15% 0 0;
+    margin:auto;
+      
+   }
+.form{
+    position:relative;
+    z-index: 1;
+    margin: 50px auto 50px;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+  
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow:visible;
+    position:absolute;
+    left: calc(60% - 70px);
+    top:-32px;
+    
+}
+
+.form input{
+    font-family: "Roboto",sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    }
+
+.form button{
+    font-family:"Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover,.form button:active{
+    background: #43A047;
+}
+.form .message{
+    margin: 15px 0 0;
+    color: deeppink;
+    font-size: 20px;
+}
+.form .message a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.form .register-form{
+    display: none;
+}
+.form .forget-form{
+    display: none;
+}
+.form .message2{
+    margin: 15px 0 0;
+    color: deeppink;
+    font-size: 20px;
+}
+.form .message2 a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+.form .message3{
+    margin: 15px 0 0;
+    color: deeppink;
+    font-size: 20px;
+}
+.form .message3 a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+
+
